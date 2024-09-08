@@ -82,8 +82,9 @@ class auto_chime:
 			if os.path.isdir(temp) :
 				audio_list.append(path_fix(temp))
 			elif False: # URL
+				dummy=0
 			else:
-				
+				dummy=0
 			
 
 	def get_play_audio(self):

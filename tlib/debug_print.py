@@ -14,7 +14,12 @@
 
 ############################################################
 # 出力ラッパー
+
 is_debug_print=False
+
 def debug_print(msg: str):
 	if is_debug_print:
 		print("[DEBUG]"+msg)
+
+if __name__ == "__main__":
+    print_msg("こんにちは")

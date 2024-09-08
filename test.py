@@ -17,9 +17,9 @@
 import os
 import glob
 import subprocess
-from pydub import AudioSegment
-from pydub.playback import play
 
+from tlib import debug_print
+from tlib import ffmedia
 ############################################################
 # パスを整える
 # メモ:
@@ -42,22 +42,7 @@ list.append(5)
 
 print(list)
 
-cong_path = os.path.normpath("path")
-print(cong_path)
-#song = AudioSegment.from_mp3(cong_path)
+if __name__ == "__main__":
 
-#do_it_over = song * 0
-
-#play(do_it_over)
-#ffmpeg -stream_loop -1 -i path -f matroska - | ffplay.exe -i - 
-ffprocess = subprocess.run(
-			[ "ffmpeg" , "-stream_loop", "-1", "-i", cong_path],
-			stdin=subprocess.PIPE,
-			stdout=subprocess.PIPE,
-			stderr=subprocess.PIPE
-		)
-
-print(ffprocess.returncode)
-print(ffprocess.stdout)
-print(ffprocess.stderr)
-
+	fm = ffmedia.ffmedia()
+	fm.select_device()

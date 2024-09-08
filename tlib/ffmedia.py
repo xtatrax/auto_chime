@@ -24,7 +24,7 @@ import platform
 import subprocess
 
 
-import debug_print
+from . import debug_print
 
 debug_print.is_debug_print = True
 debug_print.debug_print("debug")
@@ -42,7 +42,7 @@ class ffmedia_base():
 		command = self.bace_command
 		command.append(path)
 		command += exOption
-		debug_print.debug_print(" cmmand = " + command)
+		debug_print(" cmmand = " + command)
 		# プレイヤーを立ち上げて ffprocess へ パイプ を保存
 		self.ffprocess = subprocess.Popen(
 			command,
@@ -97,7 +97,7 @@ class linux(ffmedia_base):
 					high_priority_GPU=""):
 		res = subprocess.run(["aplay", "-l", "|", "grep", "card"], capture_output=True)
 		res_list = res.stdout.split('\n')
-		
+
 """
 	ffmpegを個人的に使いやすくするためのあれこれ
 """
@@ -135,3 +135,5 @@ class ffmedia():
 				select_GPU,
 				high_priority_GPU)
 
+if __name__ == "__main__":
+    debug_print.debug_print("こんにちは")
