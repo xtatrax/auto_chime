@@ -7,10 +7,11 @@
 # ffmpeg Wrapper
 #
 # 対象バージョン : python 3.x 
-# 外部モジュール :
+# 外部モジュール : yt-dlp
+# https://github.com/yt-dlp/yt-dlp/wiki/Installation#with-pip
 #
 # 外部ソフト :
-#	ffmpeg
+#	ffmpeg mplayer
 # メモ :
 #
 #	card 0: Headphones [bcm2835 Headphones], device 0: bcm2835 Headphones [bcm2835 Headphones]

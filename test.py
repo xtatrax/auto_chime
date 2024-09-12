@@ -2,6 +2,7 @@
 
 ############################################################
 # file : test.py
+# tab  : 4 space
 # 制作 ： tatra 2024年9月5日
 # 
 # googleカレンダーを使うテスト
@@ -11,7 +12,8 @@
 #   google-api-python-client, google-auth-httplib2, google-auth-oauthlib
 #	simpleaudio
 # メモ :
-# 
+#	yt-dlp url://youtube/playlist --no-continue --no-progress -f 140 -o - | mplayer -af volnorm -
+#	yt-dlp https://www.youtube.com/playlist?list=PLSngX97S1XgdZANbFVaPTOtP1EXgXxv9C --no-continue --no-progress -f 140 -o - | mpv - --audio-device=alsa/plughw:CARD=Headphones,DEV=0
 ############################################################
 
 import os
