@@ -2,6 +2,12 @@
 	"soundlist" : {
 		"close" : [
 			"./close"
+		],
+		"samples":[
+			"https://www.youtube.com/watch?v=vJuPXmDQhUM",
+			"https://www.youtube.com/watch?v=jketnyClynQ",
+			"https://music.youtube.com/watch?v=jwu6YmLEBj8&list=PL3pxEDjsxiHnwNRXRERB9DrihPMyaDhM6",
+			"https://www.youtube.com/playlist?list=OLAK5uy_mBoNw0W4N1Fmxfn-hcAw7Rz3QJD-9Dx1Q"
 		]
 	},
 	"schedule" : {

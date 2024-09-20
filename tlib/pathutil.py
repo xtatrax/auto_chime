@@ -3,6 +3,10 @@ import os
 
 
 def check_quotation(path,quotation='"'):
+	"""
+		path/ => "path/"
+		
+	"""
 	if path[0] != quotation:
 		if path[0] == "'":
 			path[0] = quotation 
